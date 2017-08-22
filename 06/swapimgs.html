@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Swapping Images</title>
+  </head>
+
+  <body>
+    <h1>Swapping Images</h1>
+
+    <div id="the_big_image" style="float: left; height: 500px;">
+      <img
+         id="large_photo"
+         style="border: 1px solid black; margin-right: 13px;"
+         src="mariposa_large_1.jpg"
+         alt="large photo" />
+    </div>
+
+    <div id="the_text" style="height: 500px;">
+       <h2>Mariposa Grove</h2>
+       <p>Mariposa Grove is a sequoia grove located near Wawona, California,
+       United States, in the southernmost part of Yosemite National Park.</p>
+
+       <p>It is the largest grove of Giant Sequoias in the park, with several
+       hundred mature examples of the tree. Two of its trees are among the 30
+       largest Giant Sequoias in the world.</p>
+
+       <p>The Mariposa Grove was first visited by non-natives in 1857 when Galen
+       Clark and Milton Mann found it. They named the grove after Mariposa County,
+       California, where the grove is located.</p>
+
+       <p>Abraham Lincoln signed an Act of Congress on June 30, 1864 ceding
+       Mariposa Grove and Yosemite Valley to the state of California. Criticism of
+       stewardship over the land led to the state's returning the grove to federal
+       control with the establishment of Yosemite National Park.</p>
+
+       <p>The Mariposa Grove Museum, the small building shown in the first photo,
+       is listed on the National Register of Historic Places.</p>
+
+       <p><em>Text from Wikipedia, photos by the author.</em></p>
+    </div>
+
+	<p><em>Click on the small images to change the larger image, above.</em></p>
+
+    <div id="the_small_images">
+
+        <a href="#"
+         onclick="document.images['large_photo'].src = 'mariposa_large_1.jpg'">
+        <img
+         style="border: 1px solid black; margin-right: 3px;"
+         src="mariposa_small_1.jpg"
+         alt="photo #1"></a>
+
+        <a href="#"
+          onclick="document.images['large_photo'].src = 'mariposa_large_2.jpg'">
+        <img
+         style="border: 1px solid black; margin-right: 3px;"
+         src="mariposa_small_2.jpg"
+         alt="photo #3"></a>
+
+        <a href="#"
+         onclick="document.images['large_photo'].src ='mariposa_large_3.jpg'">
+        <img
+         style="border: 1px solid black; margin-right: 3px;"
+         src="mariposa_small_3.jpg"
+         alt="photo #3"></a>
+
+    </div>
+
+
+  </body>
+</html>

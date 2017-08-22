@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Math Example</title>
+  </head>
+  <body>
+    <h1>Math Example</h1>
+    <p>How random are JavaScript's random numbers?<br>
+    Let's generate 5000 of them and find out.</p>
+
+    <script type="text/javascript">
+    var total = 0;
+    for (i=0; i<=5000; i++) {
+       var num = Math.random();
+       total += num;
+       if (i % 1000 == 0) {
+          document.write("Generated " + i + " numbers...<br>");
+       }
+    }
+    var average = total / 5000;
+    average = Math.round(average * 1000) / 1000;
+    document.write("<p>Average of 5000 numbers is: " + average + "</p>");
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Guest Book</title>
+
+    <style type="text/css">
+
+      fieldset {
+         width: 75%;
+         border: 2px solid #ff0000;
+      }
+
+      legend {
+         font-weight: bold;
+         font-size: 125%;
+      }
+
+      label.question  {
+         width: 225px;
+         float: left;
+         text-align: left;
+         font-weight: bold;
+      }
+
+      span.question  {
+         font-weight: bold;
+      }
+
+      input, textarea, select {
+         border: 1px solid #000;
+         padding: 3px;
+      }
+
+      #buttons {
+         margin-top: 12px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>My Guest Book</h1>
+    <form name="gbForm" method="post" action="URL_to_script">
+
+    <fieldset>
+       <legend>Personal Information</legend>
+
+       <p><label class="question" for="the_name">What is your name?</label>
+       <input type="text" id="the_name" name="the_name"
+              placeholder="Enter your full name."
+              size="50" required autofocus></p>
+
+       <p><label class="question" for="the_email">What is your e-mail
+              address?</label>
+       <input type="email" id="the_email" name="the_email"
+              placeholder="Please use a real one!"
+              size="50" required></p>
+
+    </fieldset>
+
+
+    <fieldset>
+       <legend>Survey Questions</legend>
+
+       <p><span class="question">Please check all that apply:</span><br>
+       <input type="checkbox" id="like_it" name="some_statements[]"
+              value="I really like your Web site.">
+       <label for="like_it">I really like your Web site.</label><br>
+       <input type="checkbox" id="the_best" name="some_statements[]"
+              value="It's one of the best sites I've ever seen">
+       <label for="the_best">It's one of the  best sites I've ever
+              seen.</label><br>
+       <input type="checkbox" id="jealous" name="some_statements[]"
+              value="I sure wish my site looked as good as yours.">
+       <label for="jealous">I sure wish my site looked as good as
+              yours.</label><br>
+       <input type="checkbox" id="no_taste" name="some_statements[]"
+              value="I have no taste and I'm pretty dense, so your site
+              didn't do much for me.">
+       <label for="no_taste">I have no taste and I'm pretty dense, so your
+              site didn't do much for me.</label></p>
+
+       <p><label for="choose_scale"><span class="question">Please rate my
+              site on a scale of 1 (poor) to 10 (awesome):</span></label>
+       <input type="number" id="choose_scale" name="choose_scale"
+            min="0" max="10" step="1" value="5"></p>
+
+       <p><span class="question">Please choose the one thing you love best
+              about my web site:</span><br>
+       <input type="radio" id="the_picture" name="best_thing"
+              value="me">
+       <label for="the_picture">That amazing picture of you</label><br>
+       <input type="radio" id="the_cats" name="best_thing"
+              value="cats">
+       <label for="the_cats">All the cat photos, of course</label><br>
+       <input type="radio" id="the_story" name="best_thing"
+              value="childhood story">
+       <label for="the_story">The inspiring recap of your suburban
+              childhood</label><br>
+       <input type="radio" id="the_treasures" name="best_thing"
+              value="Elvis treasures">
+       <label for="the_treasures">The detailed list of all your Elvis
+              memorabilia</label></p>
+
+        <p><label for="how_improve"><span class="question">How can I
+              improve my web site?</span></label><br>
+        <select id="how_improve" name="how_improve" size="4" multiple>
+              <option value="You can't. It couldn't be better.">You can't.
+              It couldn't be better.</option>
+              <option value="More about the cats.">More about the cats.</option>
+              <option value="More about the family.">More about the
+              family.</option>
+              <option value="More about Elvis.">More about Elvis.</option>
+        </select></p>
+
+    </fieldset>
+
+    <fieldset>
+       <legend>Free for All!</legend>
+       <p><label for="message"><span class="question">Feel free to send more
+               praise, gift offers, etc.:</span></label>
+       <textarea id="message" name="message" rows="7" cols="55"></textarea></p>
+    </fieldset>
+
+    <div id="buttons">
+      <input type="submit" value="Click Here to Submit"> or
+      <input type="reset" value="Erase and Start Over">
+    </div>
+
+    </form>
+  </body>
+</html>

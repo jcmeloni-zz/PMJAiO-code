@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Test of Heading Method</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    function addHeading(level) {
+       var html = "h" + level;
+       var text = this.toString();
+       var opentag = "<" + html + ">";
+       var closetag = "</" + html + ">";
+       return opentag + text + closetag;
+    }
+    String.prototype.heading = addHeading;
+
+    document.write("This is a heading 1".heading(1));
+    document.write("This is a heading 2".heading(2));
+    document.write("This is a heading 3".heading(3));
+    </script>
+  </body>
+</html>
+

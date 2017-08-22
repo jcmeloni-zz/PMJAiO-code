@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Hiding or Showing Objects</title>
+    <script type="text/javascript">
+    function showHide() {
+       if (!document.getElementById) return;
+       var heading1 = document.getElementById("heading1");
+       var heading2 = document.getElementById("heading2");
+       var showheading1 = document.checkboxform.checkbox1.checked;
+       var showheading2 = document.checkboxform.checkbox2.checked;
+       heading1.style.visibility=(showheading1) ? "visible" : "hidden";
+       heading2.style.visibility=(showheading2) ? "visible" : "hidden";
+    }
+    </script>
+  </head>
+  <body>
+     <h1 id="heading1">This is the first heading</h1>
+     <h1 id="heading2">This is the second heading</h1>
+     <p>Using the W3C DOM, you can choose whether to show or hide 
+     the headings on this page using the checkboxes below.</p>
+     <form name="checkboxform">
+     <input type="checkbox" name="checkbox1" 
+            onclick="showHide();" checked="checked" />
+     <span style="font-weight:bold">Show first heading</span><br>
+     <input type="checkbox" name="checkbox2" 
+           onclick="showHide();" checked="checked" />
+     <span style="font-weight:bold">Show second heading</span><br>
+     </form>
+  </body>
+</html>
+
