@@ -16,4 +16,4 @@ This book is not intended as the be-all and end-all of your education in this ma
 
 The book's ISBN is 0672337703, and was published by Sams on October 8, 2017.
 
-More information forthcoming at http://www.thickbook.com/.
+For more information about the book, including a table of contents, please visit http://www.thickbook.com/books-2/sams-teach-yourself-php-mysql-javascript-all-in-one/.
