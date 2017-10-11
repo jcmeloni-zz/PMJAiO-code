@@ -14,6 +14,6 @@ This foundation is provided by example; this book scaffolds your understanding o
 
 This book is not intended as the be-all and end-all of your education in this matter: it’s a **first step**, which will hopefully illuminate the pathways of all the other steps you will need to take to become an expert in these areas.
 
-The book's ISBN is 0672337703, and will be published by Sams in late 2017.
+The book's ISBN is 0672337703, and was published by Sams on October 8, 2017.
 
-More information forthcoming at http://www.thickbook.com/ when printing is complete.
+More information forthcoming at http://www.thickbook.com/.
